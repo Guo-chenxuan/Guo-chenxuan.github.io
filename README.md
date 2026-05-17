@@ -33,8 +33,7 @@
 ### 修改个人信息
 
 编辑 `index.html` 中的以下内容：
-- 邮箱地址（搜索 `your-email@tsinghua.edu.cn`）
-- LinkedIn 链接
+- 邮箱地址（搜索 `gcx25@tsingmails.hua.edu.cn`）
 - 项目内容和描述
 
 ### 修改样式
@@ -61,9 +60,9 @@ MIT License
 
 ## 联系方式
 
-- 📧 邮箱：your-email@tsinghua.edu.cn
+- 📧 邮箱：gcx20070320@qq.com
 - 🔗 GitHub：https://github.com/Guo-chenxuan
-- 🔗 LinkedIn：https://www.linkedin.com/in/yourprofile
+
 
 ---
 
