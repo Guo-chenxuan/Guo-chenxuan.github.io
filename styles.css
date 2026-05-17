@@ -274,6 +274,7 @@ html {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -322,10 +323,154 @@ html {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 .project-link:hover {
     color: #0052a3;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: white;
+    padding: 0;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    line-height: 1;
+}
+
+.close:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    height: 300px;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body h2 {
+    margin: 0 0 15px 0;
+    color: var(--text-dark);
+    font-size: 28px;
+}
+
+.modal-body > div:nth-of-type(2) {
+    margin: 15px 0 25px 0;
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.modal-details {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+}
+
+.modal-details h3 {
+    margin-top: 0;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+#modalInfo {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.modal-tags .tag {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /* Contact Section */
@@ -472,6 +617,22 @@ html {
 
     .hero-buttons .btn {
         width: 200px;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    .modal-header {
+        height: 200px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-body h2 {
+        font-size: 24px;
     }
 }
 
