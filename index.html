@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郭辰暄 - 个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">郭辰暄</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>郭辰暄</h1>
+                <p class="subtitle">清华大学在读学生</p>
+                <p class="profession">理论与应用力学专业</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>个人简介</h3>
+                    <p>我是清华大学工程力学系的在读学生，专业为理论与应用力学。致力于在力学、计算机科学和工程应用领域进行深入学习和研究。</p>
+                    <p>具有扎实的数学和物理基础，热衷于将理论知识应用到实际工程问题中。在学习过程中，我积极参与各类科研项目和竞赛活动。</p>
+                </div>
+                <div class="about-info">
+                    <h3>教育背景</h3>
+                    <div class="info-item">
+                        <h4>清华大学</h4>
+                        <p class="info-detail">工程力学系 · 理论与应用力学</p>
+                        <p class="info-detail">在读学生</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h3>技能与专长</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-calculator"></i>
+                        <h4>理论力学</h4>
+                        <p>掌握经典力学和连续介质力学基础</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>数值计算</h4>
+                        <p>有限元分析、MATLAB、Python编程</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cube"></i>
+                        <h4>结构仿真</h4>
+                        <p>Abaqus、ANSYS等仿真软件应用</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>数据分析</h4>
+                        <p>统计分析、可视化和科学计算</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>项目与作品</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>有限元分析平台</h3>
+                    <p>开发了一个基于Python的有限元分析工具，能够进行二维结构应力分析。包含网格生成、边界条件设置和结果后处理功能。</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">有限元法</span>
+                        <span class="tag">数值计算</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>流体动力学模拟</h3>
+                    <p>基于CFD方法实现的二维不可压缩流体流动模拟，使用MATLAB进行求解。包含圆柱绕流、沟道流等经典算例。</p>
+                    <div class="project-tags">
+                        <span class="tag">MATLAB</span>
+                        <span class="tag">CFD</span>
+                        <span class="tag">流体力学</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>机械结构优化设计</h3>
+                    <p>运用拓扑优化和形状优化方法，对工程结构进行轻量化设计。利用Abaqus进行有限元分析，实现了20%的质量减少。</p>
+                    <div class="project-tags">
+                        <span class="tag">优化设计</span>
+                        <span class="tag">Abaqus</span>
+                        <span class="tag">工程应用</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <h3>振动分析系统</h3>
+                    <p>开发的振动信号处理和分析系统，支持时域、频域、时频分析。可用于机械故障诊断和结构健康监测。</p>
+                    <div class="project-tags">
+                        <span class="tag">信号处理</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">故障诊断</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <h3>复合材料性能预测</h3>
+                    <p>基于微观力学理论，建立了复合材料宏观性能预测模型。使用Python实现了多尺度分析框架。</p>
+                    <div class="project-tags">
+                        <span class="tag">复合材料</span>
+                        <span class="tag">微观力学</span>
+                        <span class="tag">多尺度分析</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);"></div>
+                    <h3>个人网站开发</h3>
+                    <p>设计并开发了这个个人作品展示网站，展示学术成果和项目经历。采用现代化的Web设计和响应式布局。</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Web设计</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+                    <a href="#" class="project-link">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <p class="contact-intro">欢迎通过以下方式与我联系，讨论合作机会或交流想法。</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:your-email@tsinghua.edu.cn" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>邮箱</h3>
+                    <p>your-email@tsinghua.edu.cn</p>
+                </a>
+                <a href="https://github.com/Guo-chenxuan" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Guo-chenxuan</p>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Your LinkedIn Profile</p>
+                </a>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="你的名字" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="你的邮箱" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="你的消息" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 郭辰暄. All rights reserved.</p>
+            <p>清华大学 · 工程力学系</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
